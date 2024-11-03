@@ -1,0 +1,113 @@
+Code:
+Set Up Your API in Postman
+1.Open Postman and create a new request collection for your Student API to keep everything organized.
+2.Ensure your server is running (i.e., node server.js or npx nodemon server.js).
+3.Use the base URL for your requests: http://localhost:5000/api/students.
+2. CRUD Operations Using Postman
+1. Create a Student (POST Request)
+Endpoint: POST http://localhost:5000/api/students
+Headers:
+oContent-Type: application/json
+Body: Select "raw" and set the type to JSON. Use the following JSON structure
+{
+  "name": "John Doe",
+  "age": 21,
+  "email": "johndoe@example.com",
+  "grade": "A"
+}
+Send the request: You should receive a response with the newly created student object and a 201 Created status.
+2. Get All Students (GET Request)
+Endpoint: GET http://localhost:5000/api/students
+Headers: None required.
+Send the request: This will return an array of all students currently in the database.
+3. Get a Single Student by ID (GET Request)
+Endpoint: GET http://localhost:5000/api/students/:id
+Example: Replace :id with the actual ID of a student (you can get this from the list of students you retrieved in the previous step).
+oE.g., GET http://localhost:5000/api/students/64f9082399995d0f1a7c8abc
+Send the request: This will return the details of the specified student.
+4. Update a Student (PUT Request)
+Endpoint: PUT http://localhost:5000/api/students/:id
+Headers:
+oContent-Type: application/json
+Body: Use JSON format to specify the fields you want to update
+
+{
+  "name": "Jane Doe",
+  "age": 22,
+  "email": "janedoe@example.com",
+  "grade": "B"
+}
+Send the request: You should receive a response with the updated student data.
+5. Delete a Student (DELETE Request)
+Endpoint: DELETE http://localhost:5000/api/students/:id
+Example: Replace :id with the ID of the student you want to delete.
+oE.g., DELETE http://localhost:5000/api/students/64f9082399995d0f1a7c8abc
+Send the request: You should receive a confirmation message that the student has been deleted.
+
+
+
+
+
+
+
+
+OUTPUT:
+
+POST (Create):
+
+json
+Copy code
+{
+  "_id": "64f9082399995d0f1a7c8abc",
+  "name": "John Doe",
+  "age": 21,
+  "email": "johndoe@example.com",
+  "grade": "A",
+  "__v": 0
+}
+
+GET (All Students):
+
+json
+Copy code
+[
+  {
+    "_id": "64f9082399995d0f1a7c8abc",
+    "name": "John Doe",
+    "age": 21,
+    "email": "johndoe@example.com",
+    "grade": "A",
+    "__v": 0
+  }
+]
+GET (Single Student):
+
+json
+Copy code
+{
+  "_id": "64f9082399995d0f1a7c8abc",
+  "name": "John Doe",
+  "age": 21,
+  "email": "johndoe@example.com",
+  "grade": "A",
+  "__v": 0
+}
+PUT (Update):
+
+json
+Copy code
+{
+  "_id": "64f9082399995d0f1a7c8abc",
+  "name": "Jane Doe",
+  "age": 22,
+  "email": "janedoe@example.com",
+  "grade": "B",
+  "__v": 0
+}
+DELETE (Remove):
+
+json
+Copy code
+{
+  "message": "Student deleted successfully"
+}
