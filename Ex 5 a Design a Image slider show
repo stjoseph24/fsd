@@ -1,0 +1,85 @@
+a.Design a Image Slider Show
+
+Program:
+Image.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/6.3.0/css/all.min.css" integrity="sha512- SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGK HEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="script.js" defer></script>
+<title>Image Slider</title>
+</head>
+<body>
+<div class="container">
+<a class="btn btn-left"><i class="fa-solid fa-caret-left"></i></a>
+<a class="btn btn-right"><i class="fa-solid fa-caret-right"></i></a>
+</div>
+</body>
+</html>
+
+
+Script.js
+
+function initializeImageSlider(containerSelector, buttonSelector, images) { const container = document.querySelector(containerSelector);
+const btns = document.querySelectorAll(buttonSelector); const imgList = images;
+let index = 0; console.log(index);
+
+
+btns.forEach((button) => { button.addEventListener('click', () => {
+if (button.classList.contains('btn-left')) { index--;
+if (index < 0) { \
+index = imgList.length - 1;
+}
+
+} else {
+
+index++;
+
+if (index === imgList.length) {
+index = 0;
+
+}
+
+}
+container.style.background = `url("img/${imgList[index]}.jpg") center/cover fixed no-repeat`;
+
+});
+});
+}
+// Usage example:
+
+initializeImageSlider('.container', '.btn', ["1", "2", "3", "4"]);
+
+
+
+style.css
+
+body{
+
+margin:0; padding:0;
+box-sizing: border-box; background-color: salmon;
+}
+.container{
+min-height: 80vh; width:60%;
+border:8px solid rgb(129, 187, 174); margin:4rem auto;
+border-radius: 5px;
+box-shadow: 10px 10px 35px rgba(0,0,0,0.6); position:relative;
+background: url("img/1.jpg") center/cover fixed no-repeat; transition:background 1s ease-in-out;
+}
+.btn-left{ position:absolute; top:50%;
+left:-2%;
+
+background-color: white; padding:.4em .6em; border-radius: 2em;
+transform:translateY(calc(-50%)); cursor: pointer;
+}
+
+.btn-right{ position:absolute; top:50%;
+right:-2%;
+
+background-color: white; padding:.4em .6em; border-radius: 2em;
+transform:translateY(calc(-50%)); cursor: pointer; }
