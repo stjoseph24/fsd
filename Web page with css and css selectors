@@ -1,0 +1,47 @@
+
+style.html
+<html>  <head>
+<title> Popular Web Browser </title>
+<!--Extended Style Sheet--->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--Embedded Style Sheet--->
+<style type="text/css"> p{
+background-color:pink; text-align:justify;
+margin:2 em 7em;
+}
+</style>   </head>
+<body id="body">
+<h1> WEB BROWSER </h1>
+<p>  <span style="font:200 x-large fantasy"> Web Browser </span>
+takes you anywhere on the internet, letting you see text, images and video from anywhere in the world. Common used Web browsers are
+</p>  <!-- Inline Style Sheet -->
+<table style ="background-position:center;text-align:Center;padding:3px;">
+<tr>  <td align ="left">
+<div class="div">
+<ul>
+<li><a href="">Google Chrome </a> </li>
+<li><a href="">Mozilla Firefox </a> </li>
+<li><a href="">Apple Safari </a> </li>
+<li><a href="">Microsoft Edge </a> </li>
+<li><a href="">Opera </a> </li>
+</ul></div> </td> </tr>   </table>  </body>  </html>
+
+style.css
+h1,h2 {
+text-decoration: Underline; font-style: italic;
+text-aligh:center;} #body{ 
+background-color:tan; border: red dotted; text-align:center;
+}
+.div
+{  border:peru solid; }
+*{ letter-spacing: 1px; }
+a:link
+{ color:black; }
+a:visited
+{  color:yellow;  }
+a:hover
+{color: green; }
+a:active
+{ colot:blue; }
+ul li
+{ font-size:small;}
