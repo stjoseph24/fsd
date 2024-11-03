@@ -1,0 +1,148 @@
+
+home.html
+<html>
+<head>
+<Title>HOME PAGE</title>
+</head>
+<frameset cols="20%,80%" Scrolling =no border = 0>
+<frame src="left.html" name="left"/>
+<frame src="right.html"name="right"/>
+</frameset>
+</html>
+
+Left.html
+<html>
+<head>
+<title> Left Page </title>
+</head>
+<center>
+<img src="file://c:/Users/hp/Desktop/HTML/Exp1/college.jpeg" height=300 width=300>
+</center>
+<br/><br/>
+<br/>
+<center>
+<h3><b><a href="right.html" target=right>HOME</a></b></h3>
+<h3><b><a href="image.html" target=right>IMAGES</a></b></h3>
+<h3><b><a href="symposium.html" target=right>SYMPOSIUM</a></b></h3>
+<h3><b><a href="contact.html" target=right>CONTACT</a></b></h3>
+</center>
+</body>
+</html>
+Right.html
+html>
+<head>
+<title> Right Page </title>
+</head>
+<center>
+<h1>St. JOSEPH'S INSTITUTE OF TECHNOLOGY</h3>
+<h3>JEPPIAR NAGAR, OMR </h3>
+<h2>DEPARTMENT OF INFORMATION TECHNOLOGY </h2>
+<img src="admin.jpeg" width="500" Height="300">
+</center>
+<div id="right"><br> St. Joseph’s Institute of Technology is a higher education institution in OMR, Chennai, India, 
+established in the year 2011, with 6 UG courses (B.E. – CSE, ECE, EEE & Mech. Engg.,
+ B.Tech. IT & B.Tech Artificial Intelligence and Data Science is offered from the year 2021. MBA is offered from the year 2022.
+Our college is affiliated to the Anna University and approved by AICTE. 
+The courses offered from the inception (B.E. – CSE, ECE & Mech. Engg. & B.Tech. IT) have been accredited by NBA in 2017 in the shortest span of 6 years since inception, 
+and granted Autonomous status by UGC  in 2022 which ascertains our quality.
+</div></div><div id="bottom">
+<center><br><br><font size="2"> Copy Rights.All Rights Reserved.</font></center>
+</div>
+</body>
+</html>
+Image.html
+<html>
+<head>
+<title> Image Link </title>
+</head>
+<center>
+<h1>DEPARTMENT OF INFORMATION TECHNOLOGY</h1></center>
+<center>
+<img src="it.gif"><img src=it1.jpeg">
+<div id="right"><br><br><br/>
+<div id="wrap">
+<div id="top">
+<b>About us </b>  <br><br/>
+<b> WHO WE ARE <b><br><br/>
+Department of Information Technology with state-of-art research facilities and 
+well qualified faculty members produces young aspiring Engineers<br><br/>
+<b>VISION </b> <br> <br>
+To achieve and sustain international prominence in education, 
+research and professional skill development<br><br/>
+<b>MISSION</b>  <br> <br>
+To set a standard in education by developing the intellectual strength of students and guiding them to have a sound and 
+updated knowledge in the emerging areas of technology </div>
+</div></div><div id="bottom">
+<center><br><br><font size="2"> Copy Rights.All Rights Reserved.</font></center>
+</div>
+</center>
+</body>
+</html>
+
+Symposium.html
+<html>
+<head>
+<title> Symposium </title>
+</head>
+<body>
+<center>
+<h1>DEPARTMENT OF INFORMATION TECHNOLOGY</h1>
+<br/><br/>
+<form action="localhost" method="post">
+<table>
+<tr> <td> Name </td>
+<td> <input type="text" name="name"></td>
+</tr>
+<table>
+<tr> <td> College Name </td>
+<td> <input type="text" name="cname"></td>
+</tr>
+<table>
+<tr> <td> Department </td>
+<td> <input type="text" name="dept"></td>
+</tr>
+<table>
+<tr> <td> Mail ID </td>
+<td> <input type="text" name="mail"></td>
+</tr>
+<table>
+<tr> <td> Phone No </td>
+<td> <input type="text" name="pno"></td>
+</tr>
+<tr> <td> <input type="reset" value="Reset"></td>
+<td><input type="submit" value="Submit"></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
+
+
+
+
+Contact.html
+<html>
+<head>
+<title> Contact Page </title>
+</head>
+<body>
+<center>
+<h1>St. JOSEPH'S INSTITUTE OF TECHNOLOGY</h3>
+<h2>DEPARTMENT OF INFORMATION TECHNOLOGY </h2>
+<br/><br/><br/><br/>
+<img src="it11.jpg" height="500" width="500">
+</center><br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<table>
+<tr>
+<th> Phone no: </th>
+<td> 123456789 </td>
+</tr>
+<tr>
+<th> EMAIL-ID: </th>
+<td> xyz@gmail.com </td>
+</tr>
+</table>
+</body>
+</html>
